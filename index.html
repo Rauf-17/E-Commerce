@@ -63,10 +63,289 @@
 
     <!-- Nav Bar Ends Here -->
 
-    <!-- Main Starts here -->
 
-    <main>
-        <h3>I'm Main Section</h3>
+
+
+    <!-- Header Starts Here -->
+
+    <header class="header">
+        <div class="banner flex-around-center">
+            <marquee behavior="" direction="" class="banner__title">
+                20% OFF on all products! Use code: <span class="highlight">DIVDEV20</span> for discount.
+            </marquee>
+            <div class="features flex-around-center">
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck-fast feature__icon"></i>
+                    <h3>Shipping Within 7 Days</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-brands fa-rocketchat feature__icon"></i>
+                    <h3>Support 24/7</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card feature__icon"></i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+        
+
+    </header>
+
+    <!-- Header Ends Here -->
+
+
+    <!-- Main Starts here -->
+    <main class="main flex-center">
+        <div class="sidebar">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list__items">
+                        <label for="software">
+                            <input type="checkbox" name="software" id="software" value="software" class="checkbox">
+                            Software
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="website">
+                            <input type="checkbox" name="website" id="website" value="website" class="checkbox">
+                            Website
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="desktop">
+                            <input type="checkbox" name="desktop" id="desktop" value="desktop" class="checkbox">
+                            Desktop Application
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="mobile">
+                            <input type="checkbox" name="mobile" id="mobile" value="mobile" class="checkbox">
+                            Mobile Applicaton
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="ERP">
+                            <input type="checkbox" name="erp" id="erp" value="erp" class="checkbox">
+                            ERP Solution
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="price-section">
+                <h3 class="section-title">Price Ranges</h3>
+                <ul class="list">
+                    <li class="list__items">
+                        <label for="price1">
+                            <input type="radio" name="price" id="price1" value="[0,50]" class="radio">
+                            $0 - $50
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[51,100]" class="radio">
+                            $51 - $100
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="price3">
+                            <input type="radio" name="price" id="price3" value="[101,150]" class="radio">
+                            $101 - $150
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="price4">
+                            <input type="radio" name="price" id="price4" value="[151,200]" class="radio">
+                            $151 - $200
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="price5">
+                            <input type="radio" name="price" id="price5" value="[200+]" class="radio">
+                            $201 +
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping Options</h3>
+                <ul class="list">
+                    <li class="list__items">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free" class="radio">
+                            Free
+                        </label>
+                    </li>
+                    <li class="list__items">
+                        <label for="">
+                            <input type="radio" name="shipping" id="paid" value="paid" class="radio">
+                            Paid
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="main-content">
+           <section class="actions flex-around-center">
+            <div class="actions__sort">
+                <label for="sort">Sort By:</label>
+                <select name="sort" id="sort" class="select">
+                    <option value="none">Select here...</option>
+                    <option value="latest">Latest</option>
+                    <option value="discount">Discount</option>
+                    <option value="low-to-high">Price: Low to High</option>
+                    <option value="high-to-low">Price: High to Low</option>
+                    <option value="sold">Sold</option>
+                </select>
+            </div>
+            <div class="actions__search">
+                <label for="search">Search:</label>
+                <input type="text" name="search" id="search" class="search__input" placeholder="Search here...">
+                <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+           </section>
+
+           <!-- Product Section -->
+
+           <section class="products">
+            <article class="product card">
+
+                <div class="badge">
+                    <span class="badge__text">New</span>
+                    <hr class="hr-design">
+                    <span class="badge__text">37 Sold</span>
+                </div>
+
+                <img src="./images/software.jpg" alt="software">
+                <div class="product__body">
+                    <h3 class="product__name">PC Builder Software</h3>
+                    <p>
+                        <span class="dot black"></span>
+                        <span class="dot skyblue"></span>
+                        <span class="dot bisque"></span>                    
+                    <p>
+                    <p class="product__description">
+                        PC builder software is designed to help users plan and build their own computers by selecting compatible parts and ensuring a successful build.... 
+                        <a href="./product.html" class="product__link">Read More</a>
+                    </p>
+                    <h4 class="product__price">$149.99</h4>
+                    <p class="product__rating">Rating: 4.7/5</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                </div>
+            </article>
+            <article class="product card">
+
+                <div class="badge">
+                    <span class="badge__text">Cheap</span>
+                    <hr class="hr-design">
+                    <span class="badge__text">50 Sold</span>
+                </div>
+
+                <img src="./images/website.jpg" alt="website">
+                <div class="product__body">
+                    <h3 class="product__name">Content Based Website</h3>
+                    <p>
+                        <span class="dot black"></span>
+                        <span class="dot skyblue"></span>
+                        <span class="dot bisque"></span>                    
+                    <p>
+                    <p class="product__description">
+                        Website content encompasses all the information and elements displayed on a website, including text, images, videos, and audio.... 
+                        <a href="./product.html" class="product__link">Read More</a>
+                    </p>
+                    <h4 class="product__price">$149.99</h4>
+                    <p class="product__rating">Rating: 4.7/5</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                </div>
+            </article>
+            <article class="product card">
+
+                <div class="badge">
+                    <span class="badge__text">ERP</span>
+                    <hr class="hr-design">
+                    <span class="badge__text">33 Sold</span>
+                </div>
+
+                <img src="./images/erp.jpg" alt="erp">
+                <div class="product__body">
+                    <h3 class="product__name">Enterprise Resourse Management</h3>
+                    <p>
+                        <span class="dot black"></span>
+                        <span class="dot skyblue"></span>
+                        <span class="dot bisque"></span>                    
+                    <p>
+                    <p class="product__description">
+                        ERP, or Enterprise Resource Planning, is a software system that integrates various business processes into a single platform. It helps organizations manage core functions like finance, HR, manufacturing, supply chain, and sales, providing a unified view of their operations and a single source of truth. .... 
+                        <a href="./product.html" class="product__link">Read More</a>
+                    </p>
+                    <h4 class="product__price">$119.99</h4>
+                    <p class="product__rating">Rating: 4.8/5</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                </div>
+            </article>
+            <article class="product card">
+
+                <div class="badge">
+                    <span class="badge__text">Sales</span>
+                    <hr class="hr-design">
+                    <span class="badge__text">28 Sold</span>
+                </div>
+
+                <img src="./images/mobile app.png" alt="moibile">
+                <div class="product__body">
+                    <h3 class="product__name">Build App</h3>
+                    <p>
+                        <span class="dot black"></span>
+                        <span class="dot skyblue"></span>
+                        <span class="dot bisque"></span>                    
+                    <p>
+                    <p class="product__description">
+                        A mobile app is a software application designed to run on mobile devices like smartphones and tablets. These apps offer a wide range of functionalities, from games and social media to productivity tools and shopping..... 
+                        <a href="./product.html" class="product__link">Read More</a>
+                    </p>
+                    <h4 class="product__price">$129.99</h4>
+                    <p class="product__rating">Rating: 4.9/5</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                </div>
+            </article>
+            <article class="product card">
+
+                <div class="badge">
+                    <span class="badge__text">Old</span>
+                    <hr class="hr-design">
+                    <span class="badge__text">23 Sold</span>
+                </div>
+
+                <img src="./images/desktop.jpg" alt="software">
+                <div class="product__body">
+                    <h3 class="product__name">Product Management Software</h3>
+                    <p>
+                        <span class="dot black"></span>
+                        <span class="dot skyblue"></span>
+                        <span class="dot bisque"></span>                    
+                    <p>
+                    <p class="product__description">
+                        Product management software websites help streamline the process of creating, managing, and launching products by offering features like roadmapping, task management, collaboration tools, and analytics..... 
+                        <a href="./product.html" class="product__link">Read More</a>
+                    </p>
+                    <h4 class="product__price">$99.99</h4>
+                    <p class="product__rating">Rating: 4.3/5</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                </div>
+            </article>
+            
+           </section>
+        </div>
     </main>
 
     <!-- Main Ends here -->
