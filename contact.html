@@ -66,7 +66,38 @@
     <!-- Main Starts here -->
 
     <main>
-        <h3>I'm Contact Page</h3>
+        <div class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container flex-center">
+                    <form class="form card">
+                        <div class="form-control flex-center">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-control flex-center">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-control flex-center"></div>
+                            <label for="message">Feedback</label>
+                            <textarea name="message" id="message" cols="10" rows="10" placeholder="Send Your Feedback"></textarea>
+                        </div>
+                        <div class="form-control flex-center form-btn-field">
+                            <button type="submit" class="btn feedback-btn">Feedback</button>
+                        </div>
+                    </form>
+                    <div class="contact-address flex-around-center">
+                        <address>
+                            <h4>Address</h4>
+                            <p>Road: 02, Block: F, Bashunndhara, Dhaka, Bangladesh</p>
+                            <br>
+                            <span>Call:</span>
+                            <a href="tel:+88011223556" class="phone-number">+88011223556</a>
+                        </address>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211457.28543037188!2d90.419689!3d23.780840500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1745621035547!5m2!1sen!2sbd" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+        </div>
     </main>
 
     <!-- Main Ends here -->

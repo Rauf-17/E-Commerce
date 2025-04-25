@@ -38,6 +38,9 @@ img{
     cursor: pointer;
     font-size: 1rem;
     transition: var(--transition);
+
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover{
     background-color: var(--primary-color);
@@ -67,8 +70,13 @@ img{
     transform: scale(1.05);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
 }
-
-
+a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
 /* Reset  code and Common code Starts here*/
 
 /* Nav Bar Design Starts */
@@ -300,6 +308,244 @@ main{
     background-color: bisque;
     border: 1px solid black;
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+}
+.pagination__btn{
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+}
+.pagination__btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+.btn-home{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 30%;
+}
+    /* Product Details Starts */
+
+.product-details__left{
+    flex: 1;
+}
+.product-details__right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    gap: 0.6rem;
+    
+}
+.product-details__img{
+    height: 20rem;
+    width: 25rem;
+    border: #213448 3px solid;
+    border-radius: var(--border-radius);
+}
+
+
+    /* Product Details Ends */
+
+
+    /* Cart Starts Here */
+
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+.cart__items{
+    flex: 1;
+}
+.cart__payment{
+    flex: 1;
+}
+.cart .card{
+    margin-bottom: 1rem;
+}
+.cart__items-actions{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart__item input{
+    flex: 0.1;
+}
+.cart-item__img{
+    flex: 0.2;
+    width: 15rem;
+    height: 10rem;
+
+}
+.cart-item__description{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cart__item-shipping{
+    margin-top: 0.5rem;
+    color: green;
+
+}
+.card__item-actions{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cart__payment-summary >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+.cart__payment-btn{
+    width: 100%;
+}
+.cart__payment-methods > h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cart__payment-methods > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+    /* Cart Ends here */
+
+
+    /* Profile Starts here */
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    gap: 2rem;
+}
+.profile__info{
+    flex-direction: column;
+    width: 30rem;
+    padding: var(--padding);
+    gap: 1rem;
+}  
+.profile__img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+    /* Profile Ends here */
+
+
+
+    /* Register Starts here */
+
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    gap: 1rem;
+}
+.form-control label{
+    flex: 0.2;
+    text-align: left;
+}
+.form-control input{
+    flex: 0.8;
+    padding: var(--padding);
+}
+.form-control textarea{
+    resize: none;
+    height: 10vh;
+}
+.form-btn-field{
+    border-radius: var(--border-radius);
+}
+.contact-btn{
+    width: 100%;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 60vh;
+
+}
+.register .card{
+    width: 50rem;
+}
+
+    /* Register Ends here */
+
+
+    /* Login Starts here */
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        min-height: 60vh;
+    
+    }
+    .login .card{
+        width: 50rem;
+    }
+    .login-btn{
+        width: 30%;
+    }
+
+    /* Login Ends Here */
+
+    /* Contact Starts Here */
+
+.phone-number{
+    color: var(--secondary-color);
+}
+.contact-section{
+    min-height: 50vh;
+    padding: var(--padding);
+}
+
+.contact-container{
+    margin-top: 2rem;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.contact-container form{
+    margin-bottom: 2rem;
+    flex: 1;
+}
+.contact-address{
+    flex: 1;
+    align-items: center;
+    gap: 2rem;
+}
+.map{
+    margin-top: 2rem;
+    width: 40%;
+}
+
+    /* Contact Starts Here */
+
 /* Main Part Ends Here */
 
 
@@ -336,13 +582,52 @@ main{
         display: none;
     }
     .flex-around-center, .flex-center{
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         padding: var(--padding);
     }
     .header{
         height: 100vh;
     }
-    
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    .cart__items, .cart__payment{
+        width: 90%;
+    }
+    .form{
+        width: 100%;
+        gap: 0;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .form-control input, textarea{
+        width: 80%;
+    }
+    .register .card, .login .card{
+        width: 90%;
+    }
+
+}
+@media (max-width: 768px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+@media (max-width: 600px){
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
 }
  /* Reponsiveness Starts */
