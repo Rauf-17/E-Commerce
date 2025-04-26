@@ -552,21 +552,51 @@ main{
 
 
 /* Footer Starts Here */
+.footer {
+    min-height: 20vh;
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
-.footer__nav{
+.footer__nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 2rem;
     font-size: 1rem;
-    
 }
-.footer__link{
-    color: black;
+
+.footer__link {
+    color: var(--text-color);
+    transition: var(--transition);
 }
-.footer__input{
-    padding: 0.5rem;
+
+.footer__link:hover {
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+
+.footer__input {
+    padding: 0.8rem;
     width: 15rem;
     border-radius: var(--border-radius);
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__input:focus {
+    outline: 2px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+.footer-newsletter {
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-newsletter label {
+    font-weight: 500;
+    color: var(--primary-color);
 }
 /* Footer Ends Here */
 
