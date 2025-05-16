@@ -2,8 +2,7 @@
 
 Welcome to my e-commerce website project! This is a fully designed front-end website created using **HTML** and **CSS only**, as part of a hands-on learning journey to master modern front-end web development techniques.
 
-🌐 **Live Demo**: [ecommercerauf.netlify.app](https://ecommercerauf.netlify.app/)
-
+🌐 **Live Demo**: [E-Commerce Live Demo](https://rauf-17.github.io/E-Commerce/)
 ---
 
 ## 🚀 Features
