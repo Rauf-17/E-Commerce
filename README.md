@@ -1,6 +1,6 @@
 # 🛍️ E-Commerce Website (HTML & CSS Only)
 
-Welcome to my e-commerce website project! This is a fully designed front-end website created using **HTML** and **CSS only**, as part of a hands-on learning journey to master modern front-end web development techniques.
+Welcome to my e-commerce website project! This is a fully designed front-end website created using **HTML** and **CSS only**, as part of a hands-on learning journey to master modern front-end web development techniques. **Feel Free to Collaborate with Javascript to make it Functional**
 
 🌐 **Live Demo**: [E-Commerce Live Demo](https://rauf-17.github.io/E-Commerce/)
 ---
